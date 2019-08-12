@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // defines what 1 rem is
+  font-size: 62.5%; // 1rem = 10px 10px/16x = 62.5%;
+
+  @include respond(tab-land){ // width < 1200
+    font-size: 56.25%; // 1rem = 9px, 9/16 = .5625
+  }
+  @include respond(tab-port){ // width < 900
+    font-size: 50%;   // 1rem = 8px, 8/16 = .5
+  }
+  @include respond(phone){ // width < 600
+    font-size: 31.25%;   // 1rem = 8px, 5/16 = .31.25
+  }
+  @include respond(big-desktop){ //1rem = 12, 12/16 = .75 
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0rem;
+
+  @include respond(tab-port){
+    padding: 0; 
+  }
+}
