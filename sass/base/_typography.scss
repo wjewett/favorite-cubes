@@ -11,7 +11,7 @@ body {
   margin-bottom: 1.5rem;
 }
 .heading-primary {
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;                                                                
@@ -31,7 +31,7 @@ body {
   }
 
   &:hover {
-    transform: skewY(2deg) skewX(25deg) scale(1.5);
+    transform: skewY(2deg) skewX(25deg) scale(1.2);
     text-shadow: .5rem 1rem 2rem rgba($color-black, .3);
   }
 }
